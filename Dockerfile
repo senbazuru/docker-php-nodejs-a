@@ -18,5 +18,5 @@ RUN deps='\
     && sudo apt install -y -qq --no-install-recommends $deps \
     && sudo rm -rf /var/lib/apt/lists/* \
     && sudo gem install bundler hub --no-document \
-    && sudo docker-php-ext-install exif gd pdo_pgsql \
+    && sudo docker-php-ext-install exif gd pdo_pgsql pcntl \
     && composer global require hirak/prestissimo
