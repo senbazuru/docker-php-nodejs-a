@@ -7,6 +7,7 @@ RUN deps='\
          nodejs \
          yarn \
          libpq-dev \
+         libjpeg-dev \
          libpng-dev \
          ' \
     && set -x \
